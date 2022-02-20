@@ -27,7 +27,7 @@ class Measurements(db.Model):
         self.date = date
 
 
-twenty_four_hours = timedelta(seconds=5)  # Переменная, для определения промежутков времени между добавлениями в БД
+twenty_four_hours = timedelta(seconds=5)  # Переменная, для определения промежутков времени между добавлениями в БД,поставил меньше, чтобы было проще тестировать.
 
 
 @app.route("/search", methods=['GET'])  # Ручка, отвечающая за замер и отправку в БД
